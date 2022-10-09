@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <m<!-- meta charec set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- Page Title -->
+        <title>CDC2022 Dell XPS Gang Twitter Dataset</title>		
+		<!-- Meta Description -->
+        <meta name="description" content="Blue One Page Creative HTML5 Template">
+        <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+        <meta name="author" content="Rohit Singh">
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Google Font -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        
+        <!-- CSS
+		================================================== -->
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- Twitter Bootstrap css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- jquery.fancybox  -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- animate -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+		<!-- media-queries -->
+        <link rel="stylesheet" href="css/media-queries.css">
+        
+        <link rel="stylesheet" href="CDC2022.css">
+        
+    </head>
+    
+    <body id="body">
+       
+        <!--
+        Home Slider
+        ==================================== -->
+		
+		<section id="slider">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<!-- single slide -->
+					<div class="item active" style="background-image:url(img/banner.jpg)">
+						<div class="carousel-caption">
+							<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">How do people Tweet about<span> Climate Change?</span></h2>
+							<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">CDC</span> 2022 presentation</h3>
+						</div>
+					</div>
+					<!-- end single slide -->
+					
+				</div>
+				<!-- End Wrapper for slides -->
+				
+			</div>
+		</section>
+        <!--
+        End Home SliderEnd
+        ==================================== -->
+        
+        <!-- SLide 2-->
+        <section id="features" class="features">
+            <br/>
+            <br/>
+            <div class="sec-title text-center">
+                <h2>How did we get our data?</h2>
+                <hr style="width:750px;background-color:black;height: 2px;border: none"/> 
+            </div>
+            <h3 style="text-align: center">Using tweepy and the twitter API, we were able to collect more than 50,000 tweets tagged with climate change topics</h3>
+            <br/>
+            <div>
+                <ul id="horizontal-list">
+                    <li><h4>#climatechange</h4></li>
+                    <li><h4>#climatehoax</h4></li>
+                    <li><h4>#climatechangeisreal</h4></li>
+                    <li><h4>#globalwarming</h4></li>
+                </ul>
+            </div>
+            <br/>
+        </section>
+        
+        <!-- SLide 3-->
+        <section>
+        <br/>
+            <br/>
+            <div class="sec-title text-center">
+                <h2>What tweets generate the most traction?</h2>
+                <hr style="width:750px;background-color:black;height: 2px;border: none"/> 
+            </div>
+            
+            <ul style="margin: 25px">
+                <li><h3>- Using <strong>sentiment analysis</strong> we classified each tweet on a scale from (-1,1) to describe how negative or positive it was</h3></li>
+                <li><h3>- Tweets with a slightly positive sentiment value less than zero generated much more traction than their positive counterparts</h3></li>
+                <li><h3>- The more polarizing the tweet, the more attention it was likely to get</h3></li>
+            </ul>
+            <br/>
+            <br/>
+        
+        </section>
+        
+        <!-- SLide 4-->
+        <section id="features" class="features">
+        <br/>
+            <br/>
+            <div class="sec-title text-center">
+                <h2>Retweets vs. Sentiment Graph</h2>
+                <hr style="width:750px;background-color:black;height: 2px;border: none"/> 
+            </div>
+            <center><img src=RetweetsVsSentiment.png alt="Graph of Retweets vs. Sentiment"></center>
+            <br/>
+            <br/>
+        </section>
+
+        
+        <!-- SLide 5-->
+        <section>
+        <br/>
+            <br/>
+            <div class="sec-title text-center">
+                <h2>Replies vs. Sentiment Graph</h2>
+                <hr style="width:750px;background-color:black;height: 2px;border: none"/>
+            </div>
+            <center><img src=RepliesVsSentiment.png alt="Graph of Replies Vs. Sentiment"></center>
+            <br/>
+            <br/>
+        </section>
+        
+        <!-- SLide 6-->
+        <section id="features" class="features">
+        <br/>
+            <br/>
+            <div class="sec-title text-center">
+                <h2>Likes vs. Sentiment Graph</h2>
+                <hr style="width:750px;background-color:black;height: 2px;border: none"/> 
+            </div>
+            <center><img src=LikesVsSentiment.png alt="Graph of Likes vs. Sentiment"></center>
+            <br/>
+            <br/>
+        
+        </section>
+        
+        <!-- SLide 7-->
+        <section>
+        <br/>
+            <br/>
+            <div class="sec-title text-center">
+                <h2>How does the weather affect someone’s tweets?</h2>
+                <hr style="width:750px;background-color:black;height: 2px;border: none"/> 
+            </div>
+            <center>
+            <h3>Using a weather API, we were able to correlate geo-tagged tweets with the user’s current weather</h3>
+            <br/>
+            <ul>
+                <li><h4>- As the temperature increased, the sentiment values of the tweets decreased</h4></li>
+                <li><h4>- This means that tweets were more negative as the weather got warmer</h4></li>
+            </ul>    
+        </center>
+            <br/>
+            <br/>
+        </section>
+        
+
+        <!-- SLide 8-->
+        <section id="features" class="features">
+        <br/>
+            <br/>
+            <div class="sec-title text-center">
+                <h2>Sentiment vs. Temperature graphs</h2>
+                <hr style="width:750px;background-color:black;height: 2px;border: none"/>
+                <center><img src=SentimentVsTemperatureGraph.png alt="Graph of Sentiment vs. Temperature"></center>
+            </div>
+        <br/>
+            <br/>
+        </section>
+        
+        <!-- SLide 9-->
+        <section>
+        <br/>
+            <br/>
+            <div class="sec-title text-center">
+                <h2>How do people tweet about climate change compared to everything else?</h2>
+                <hr style="width:750px;background-color:black;height: 2px;border: none"/> 
+            </div>
+            <h3 style="margin: 25px">We examined the general sentiment of tweeting history of accounts that tweeted positively vs. negatively about climate change</h3>
+            <ul style = "margin: 25px">
+                <li><h3>- Accounts that tweeted positively about climate change had generally positive sentiment values in past tweets</h3></li>
+                <li><h3>- Accounts that tweeted negatively about climate change had generally negative sentiment values in past tweets</h3></li>
+            </ul>
+        <br/>
+            <br/>
+        </section>
+        
+        <!-- Slide 10-->
+        <section id="features" class="features">
+        <br/>
+            <br/>
+            <div class="sec-title text-center">
+                <h2>Original Tweet vs. Average Sentiment of Account Graph</h2>
+                <hr style="width:750px;background-color:black;height: 2px;border: none"/>
+                <center><img src=OGTweetVsSentiment.png alt="Graph of Tweet Vs Sentiment of Account"></center>
+            </div>
+        
+        
+        </section>
+        
+        <!-- Slide 11-->
+        <section>
+        <br/>
+            <br/>
+            <div class="sec-title text-center">
+                <h2>Which factors of a tweet help it gain popularity?</h2>
+                <hr style="width:750px;background-color:black;height: 2px;border: none"/> 
+            </div>
+            <h3 style="text-align: center">We analyzed different factors that increased the interaction with a tweet</h3>
+                <ul style="margin: 25px">
+                <li><h3>- We found that a small amount of hashtags resulted in a large amount of retweets</h3></li>
+                <li><h3>- If a tweet contained too many hashtags, we see that the amount of retweets decreases drastically</h3></li>
+                </ul>
+            
+        </section>
+        
+        
+        <!-- Slide 12-->
+        <section id="features" class="features">
+        <br/>
+            <br/>
+            <div class="sec-title text-center">
+                <h2>Retweets Based on Hashtags Graph</h2>
+                <hr style="width:750px;background-color:black;height: 2px;border: none"/>
+                <center><img src=RetweetsBasedOnHashtags.png alt="Graph of Retweets Based on Hashtags"></center>
+            </div>
+        
+        </section>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
+        <script>
+            function arrayToTable(tableData) {
+                var table = $('<table></table>');
+                $(tableData).each(function (i, rowData) {
+                    var row = $('<tr></tr>');
+                    $(rowData).each(function (j, cellData) {
+                        row.append($('<td>'+cellData+'</td>'));
+                    });
+                    table.append(row);
+                });
+                return table;
+            }
+
+            $.ajax({
+                type: "GET",
+                url: "https://raw.githubusercontent.com/aditisingh2019/cdc2022/main/data7.csv",
+                success: function (data) {
+                    $('body').append(arrayToTable(Papa.parse(data).data));
+                }
+            });
+        </script>
+        
+        <br/>
+        <br/>
+        <div class="sec-title text-center">
+            <h2>Our Datasets</h2>
+            <hr style="width:750px;background-color:black;height: 2px;border: none"/> 
+        </div>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
+        <script>
+            function arrayToTable(tableData) {
+                var table = $('<table></table>');
+                $(tableData).each(function (i, rowData) {
+                    var row = $('<tr></tr>');
+                    $(rowData).each(function (j, cellData) {
+                        row.append($('<td>'+cellData+'</td>'));
+                    });
+                    table.append(row);
+                });
+                return table;
+            }
+
+            $.ajax({
+                type: "GET",
+                url: "https://raw.githubusercontent.com/aditisingh2019/cdc2022/main/cdc3.csv",
+                success: function (data) {
+                    $('body').append(arrayToTable(Papa.parse(data).data));
+                }
+            });
+        </script>
+        
+        <br/>
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- jquery.mixitup.min -->
+        <script src="js/jquery.mixitup.min.js"></script>
+		<!-- jquery.parallax -->
+        <script src="js/jquery.parallax-1.1.3.js"></script>
+		<!-- jquery.countTo -->
+        <script src="js/jquery-countTo.js"></script>
+		<!-- jquery.appear -->
+        <script src="js/jquery.appear.js"></script>
+		<!-- Contact form validation -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+		<!-- Google Map -->
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+		<!-- jquery easing -->
+        <script src="js/wow.min.js"></script>
+		<script>
+			var wow = new WOW ({
+				boxClass:     'wow',      // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset:       120,          // distance to the element when triggering the animation (default is 0)
+				mobile:       false,       // trigger animations on mobile devices (default is true)
+				live:         true        // act on asynchronously loaded content (default is true)
+			  }
+			);
+			wow.init();
+		</script> 
+		<!-- Custom Functions -->
+        <script src="js/custom.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				/* ========================================================================= */
+				/*	Contact Form
+				/* ========================================================================= */
+				
+				$('#contact-form').validate({
+					rules: {
+						name: {
+							required: true,
+							minlength: 2
+						},
+						email: {
+							required: true,
+							email: true
+						},
+						message: {
+							required: true
+						}
+					},
+					messages: {
+						name: {
+							required: "come on, you have a name don't you?",
+							minlength: "your name must consist of at least 2 characters"
+						},
+						email: {
+							required: "no email, no message"
+						},
+						message: {
+							required: "um...yea, you have to write something to send this form.",
+							minlength: "thats all? really?"
+						}
+					},
+					submitHandler: function(form) {
+						$(form).ajaxSubmit({
+							type:"POST",
+							data: $(form).serialize(),
+							url:"process.php",
+							success: function() {
+								$('#contact-form :input').attr('disabled', 'disabled');
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$(this).find(':input').attr('disabled', 'disabled');
+									$(this).find('label').css('cursor','default');
+									$('#success').fadeIn();
+								});
+							},
+							error: function() {
+								$('#contact-form').fadeTo( "slow", 0.15, function() {
+									$('#error').fadeIn();
+								});
+							}
+						});
+					}
+				});
+			});
+		</script>
+        
+    </body>
+</html>

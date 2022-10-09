@@ -1,0 +1,43 @@
+table {
+    display: block;
+    max-width: 1000px;
+    overflow-x: scroll;
+    max-height: 300px;
+    overflow-y: scroll;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+tr:nth-child(odd) {
+  background-color: powderblue;
+    color:black;
+}
+
+tr:nth-child(even) {
+  background-color: aliceblue;
+    color:black;
+}
+
+tr:nth-child(1){
+    font-weight: bold;
+    background-color: cornflowerblue;
+    color:black;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+ul {
+    display: table; 
+    margin: 0 auto;
+    text-align: left;
+}
+
+}
+img {
+  border: 5px solid #555;
+}
